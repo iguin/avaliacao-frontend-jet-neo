@@ -1,0 +1,48 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<div id="certificado-form">
+  <div class="ui container">
+    <div class="ui grid">
+      <h1>Certificado</h1>
+      <div class="row">
+        <div class="eight wide column">
+          <form class="ui form segment">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" handle-preview-target="#name-preview"/>
+            </div>
+            <div class="field">
+              <label for="user_email">E-mail</label>
+              <input type="email" name="email"  id="user_email" handle-preview-target="#email-preview"/>
+            </div>
+            <div class="field">
+              <label for="phone">Telefone</label>
+              <input type="text" name="phone" id="phone" handle-preview-target="#phone-preview"/>
+            </div>
+            <div class="field">
+              <label for="subject">Assunto</label>
+              <input type="text" name="subject" id="subject" handle-preview-target="#subject-preview"/>
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea rows="5" name="message" id="message" handle-preview-target="#message-preview"></textarea>
+            </div>
+            <div class="ui primary submit button">Salvar</div>
+            <div class="ui error message"></div>
+          </form>
+        </div>
+        <div class="eight wide column">
+          <h3>Dados</h3>
+		  <p id="name-preview"></p>
+		  <p id="email-preview"></p>
+		  <p id="phone-preview"></p>
+		  <p id="subject-preview"></p>
+		  <p id="message-preview"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
